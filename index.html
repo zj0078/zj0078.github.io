@@ -59,7 +59,7 @@
   isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2024-07-07 12:30:48',
+  postUpdate: '2024-07-07 12:34:00',
   postMainColor: '',
 }</script><noscript><style type="text/css">
   #nav {
@@ -208,11 +208,32 @@ if (true) {
         技术类文章
       </a>
     </div>
-    </div><div class="category-bar-next" id="category-bar-next" onclick="anzhiyu.scrollCategoryBarToRight()"><i class="anzhiyufont anzhiyu-icon-angle-double-right"></i></div><a class="catalog-more" href="/categories/">更多</a></div></div></div><div class="recent-post-item lastestpost-item" onclick="pjax.loadUrl('/2024/07/07/PG-DBA-%E8%BF%90%E7%BB%B4%E6%89%8B%E5%86%8C/')"><div class="post_cover left"><a href="/2024/07/07/PG-DBA-%E8%BF%90%E7%BB%B4%E6%89%8B%E5%86%8C/" title="PG_DBA_运维手册" style="display: flex;height: 100%;"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://files.catbox.moe/dwalza.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="PG_DBA_运维手册" style="pointer-events: none"></a></div><div class="recent-post-info"><div class="recent-post-info-top"><div class="recent-post-info-top-tips"><div class="article-categories-original">技术类文章</div><span class="newPost">最新</span><a class="unvisited-post" href="/2024/07/07/PG-DBA-%E8%BF%90%E7%BB%B4%E6%89%8B%E5%86%8C/" title="PG_DBA_运维手册">未读</a></div><a class="article-title" href="/2024/07/07/PG-DBA-%E8%BF%90%E7%BB%B4%E6%89%8B%E5%86%8C/" title="PG_DBA_运维手册">PG_DBA_运维手册</a></div><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days" style="font-size: 15px; display:none"></i><span class="article-meta-label">发表于</span><time datetime="2024-07-07T04:19:35.000Z" title="发表于 2024-07-07 12:19:35" time="2024-07-07 12:19:35">2024-07-07</time><time class="time_hidden" datetime="2024-07-07T04:30:40.404Z" title="更新于 2024-07-07 12:30:40" time="2024-07-07 12:30:40">2024-07-07</time></span></div><div class="content">PG_DBA_运维手册查看database的owner1select datname, usename as owner from pg_database left join pg_user on usesysid = datdba;
+    </div><div class="category-bar-next" id="category-bar-next" onclick="anzhiyu.scrollCategoryBarToRight()"><i class="anzhiyufont anzhiyu-icon-angle-double-right"></i></div><a class="catalog-more" href="/categories/">更多</a></div></div></div><div class="recent-post-item lastestpost-item" onclick="pjax.loadUrl('/2024/07/07/PG-DBA-%E8%BF%90%E7%BB%B4%E6%89%8B%E5%86%8C/')"><div class="post_cover left"><a href="/2024/07/07/PG-DBA-%E8%BF%90%E7%BB%B4%E6%89%8B%E5%86%8C/" title="PG_DBA_运维手册" style="display: flex;height: 100%;"><img class="post_bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://files.catbox.moe/dwalza.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="PG_DBA_运维手册" style="pointer-events: none"></a></div><div class="recent-post-info"><div class="recent-post-info-top"><div class="recent-post-info-top-tips"><div class="article-categories-original">技术类文章</div><span class="newPost">最新</span><a class="unvisited-post" href="/2024/07/07/PG-DBA-%E8%BF%90%E7%BB%B4%E6%89%8B%E5%86%8C/" title="PG_DBA_运维手册">未读</a></div><a class="article-title" href="/2024/07/07/PG-DBA-%E8%BF%90%E7%BB%B4%E6%89%8B%E5%86%8C/" title="PG_DBA_运维手册">PG_DBA_运维手册</a></div><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days" style="font-size: 15px; display:none"></i><span class="article-meta-label">发表于</span><time datetime="2024-07-07T04:19:35.000Z" title="发表于 2024-07-07 12:19:35" time="2024-07-07 12:19:35">2024-07-07</time><time class="time_hidden" datetime="2024-07-07T04:32:21.933Z" title="更新于 2024-07-07 12:32:21" time="2024-07-07 12:32:21">2024-07-07</time></span></div><div class="content">
+[up主专用，视频内嵌代码贴在这]
+
+
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 aspect ratio (height/width = 9/16 * 100%) */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+PG_DBA_运维手册查看database的owner1select datname, usename as owner from pg_database left join pg_user on usesysid = datdba;
 
 查看可见SCHEMA1select * from information_schema.schemata;
 
-查看表膨胀（对所有表进行膨胀率排序），取前10个12345678910111213SELECT    schemaname||&#x27;.&#x27;||relname as table_name,    pg_size_pretty(pg_relation_size(schemaname||&#x27;.&#x27;||relname)) as table_size,    n_dead_tup,    n_live_tup,    round(n_dead_tup * 100 / (n_live_tup + n_dead_tup),2) AS dead_tup_ratioFROM    pg_stat_all_tablesWHERE    ...</div></div></div><div class="recent-post-item" onclick="pjax.loadUrl('/2024/07/06/hello-world/')"><div class="recent-post-info no-cover"><div class="recent-post-info-top"><div class="recent-post-info-top-tips"><a class="unvisited-post" href="/2024/07/06/hello-world/" title="欢迎来到我的博客">未读</a></div><a class="article-title" href="/2024/07/06/hello-world/" title="欢迎来到我的博客">欢迎来到我的博客</a></div><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days" style="font-size: 15px; display:none"></i><span class="article-meta-label">发表于</span><time datetime="2024-07-05T23:48:17.605Z" title="发表于 2024-07-06 07:48:17" time="2024-07-06 07:48:17">2024-07-06</time><time class="time_hidden" datetime="2024-07-06T00:28:53.999Z" title="更新于 2024-07-06 08:28:53" time="2024-07-06 08:28:53">2024-07-06</time></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+查看表膨胀（对所有表进行膨胀率排序），取前10个12345678910111213SELECT  ...</div></div></div><div class="recent-post-item" onclick="pjax.loadUrl('/2024/07/06/hello-world/')"><div class="recent-post-info no-cover"><div class="recent-post-info-top"><div class="recent-post-info-top-tips"><a class="unvisited-post" href="/2024/07/06/hello-world/" title="欢迎来到我的博客">未读</a></div><a class="article-title" href="/2024/07/06/hello-world/" title="欢迎来到我的博客">欢迎来到我的博客</a></div><div class="article-meta-wrap"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days" style="font-size: 15px; display:none"></i><span class="article-meta-label">发表于</span><time datetime="2024-07-05T23:48:17.605Z" title="发表于 2024-07-06 07:48:17" time="2024-07-06 07:48:17">2024-07-06</time><time class="time_hidden" datetime="2024-07-06T00:28:53.999Z" title="更新于 2024-07-06 08:28:53" time="2024-07-06 08:28:53">2024-07-06</time></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
 Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
 
 More info: Writing
